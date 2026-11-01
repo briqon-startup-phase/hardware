@@ -1,0 +1,2 @@
+PASS: 73 checks (config, deadlines, notification episodes, JSON validation, fragments)
+PASS: 20 sensor checks (actual GPIO adapter + host bus model, CRC, faults, yielding)

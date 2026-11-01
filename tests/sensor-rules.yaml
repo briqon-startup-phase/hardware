@@ -1,0 +1,40 @@
+name: BRIQON genuine DS18B20 and notification rules
+version: 1
+author: BRIQON
+steps:
+  - wait-serial: 'reason=boot'
+  - expect-pin:
+      part-id: esp
+      name: '5'
+      value: 1
+  - wait-serial: 'temperature=4.000 C'
+  - set-control:
+      part-id: temp
+      name: temperature
+      value: 7
+  - wait-serial: 'temperature=7.000 C'
+  - set-control:
+      part-id: temp
+      name: temperature
+      value: 10
+  - wait-serial: 'rule transition=1 episode=1'
+  - delay: 6s
+  - set-control:
+      part-id: temp
+      name: temperature
+      value: 5
+  - wait-serial: 'rule transition=2 episode=1'
+  - set-control:
+      part-id: sensorFault
+      name: pressed
+      value: 1
+  - wait-serial: 'rule transition=4 episode=1'
+  - set-control:
+      part-id: sensorFault
+      name: pressed
+      value: 0
+  - wait-serial: 'rule transition=8 episode=1'
+  - expect-pin:
+      part-id: esp
+      name: '5'
+      value: 1

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "author": "BRIQON",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-s3-devkitc-1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-ds18b20", "id": "temp", "top": -15, "left": -210, "attrs": { "temperature": "4", "deviceID": "010203040506" } },
+    { "type": "wokwi-resistor", "id": "pullup", "top": -62, "left": -175, "rotate": 90, "attrs": { "value": "4700" } },
+    { "type": "wokwi-relay-module", "id": "relay", "top": 18, "left": 260, "attrs": { "transistor": "npn" } },
+    { "type": "wokwi-resistor", "id": "relayPullup", "top": -70, "left": 180, "rotate": 90, "attrs": { "value": "10000" } },
+    { "type": "wokwi-led", "id": "load", "top": 135, "left": 400, "attrs": { "color": "green", "label": "LOAD via NO" } },
+    { "type": "wokwi-resistor", "id": "loadR", "top": 102, "left": 355, "rotate": 90, "attrs": { "value": "330" } },
+    { "type": "wokwi-pushbutton", "id": "sensorFault", "top": 150, "left": -220, "attrs": { "color": "red", "label": "SENSOR FAULT (hold)", "bounce": "0" } },
+    { "type": "wokwi-pushbutton", "id": "wifiFault", "top": 260, "left": -220, "attrs": { "color": "blue", "label": "WIFI OFF (hold)", "bounce": "0" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3.1", "temp:VCC", "red", [] ],
+    [ "esp:GND.1", "temp:GND", "black", [] ],
+    [ "esp:4", "temp:DQ", "green", [] ],
+    [ "esp:3V3.1", "pullup:1", "red", [] ],
+    [ "pullup:2", "temp:DQ", "green", [] ],
+    [ "esp:5V", "relay:VCC", "red", [] ],
+    [ "esp:GND.2", "relay:GND", "black", [] ],
+    [ "esp:5", "relay:IN", "orange", [] ],
+    [ "esp:3V3.2", "relayPullup:1", "red", [] ],
+    [ "relayPullup:2", "relay:IN", "orange", [] ],
+    [ "esp:3V3.2", "relay:COM", "red", [] ],
+    [ "relay:NO", "loadR:1", "green", [] ],
+    [ "loadR:2", "load:A", "green", [] ],
+    [ "load:C", "esp:GND.2", "black", [] ],
+    [ "sensorFault:1.l", "esp:6", "purple", [] ],
+    [ "sensorFault:2.l", "esp:GND.1", "black", [] ],
+    [ "wifiFault:1.l", "esp:7", "blue", [] ],
+    [ "wifiFault:2.l", "esp:GND.1", "black", [] ]
+  ],
+  "serialMonitor": { "display": "always", "newline": "lf", "convertEol": true },
+  "dependencies": {}
+}

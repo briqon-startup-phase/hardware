@@ -1,0 +1,33 @@
+menu "BRIQON"
+config BRIQON_DEMO
+    bool "Wokwi demo profile (fault injection, disposable MQTT)"
+    default y
+config BRIQON_WIFI_SSID
+    string "Wi-Fi SSID"
+    default "Wokwi-GUEST"
+config BRIQON_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+config BRIQON_BROKER_URI
+    string "MQTT URI"
+    default "mqtt://broker.emqx.io:1883"
+config BRIQON_MQTT_USERNAME
+    string "MQTT username"
+    default ""
+config BRIQON_MQTT_PASSWORD
+    string "MQTT password"
+    default ""
+config BRIQON_DEVICE_ID
+    string "Device ID (empty = MAC-derived)"
+    default ""
+config BRIQON_ENVIRONMENT
+    string "Topic environment"
+    default "demo"
+config BRIQON_CONTROL_ENABLED
+    bool "Permit explicit relay commands"
+    default y if BRIQON_DEMO
+    default n
+config BRIQON_RELAY_ACTIVE_LOW
+    bool "Relay input active low (Wokwi npn contact behavior)"
+    default y
+endmenu

@@ -1,0 +1,12 @@
+/build/
+/.pio/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/sdkconfig.wokwi
+/sdkconfig.hardware
+/sdkconfig.*.old
+/.venv/
+/local-secrets.*
+/tests/.host-build/
+/tools/__pycache__/

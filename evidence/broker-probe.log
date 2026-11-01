@@ -1,0 +1,5 @@
+TCP probes from build host; timeout 5 s, no application payload.
+test.mosquitto.org:1883 TCP failed: timed out
+test.mosquitto.org:8080 TCP failed: timed out
+broker.emqx.io:1883 TCP reachable (0.38s)
+broker.emqx.io:8083 TCP reachable (0.39s)

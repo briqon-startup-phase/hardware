@@ -1,0 +1,145 @@
+I (563) wifi:config nano formatting: disabled
+I (567) wifi:Init data frame dynamic rx buffer num: 32
+I (573) wifi:Init static rx mgmt buffer num: 5
+I (576) wifi:Init management short buffer num: 32
+I (581) wifi:Init dynamic tx buffer num: 32
+I (585) wifi:Init static tx FG buffer num: 2
+I (589) wifi:Init static rx buffer size: 1600
+I (594) wifi:Init static rx buffer num: 10
+I (596) wifi:Init dynamic rx buffer num: 32
+I (602) wifi_init: rx ba win: 6
+I (603) wifi_init: accept mbox: 6
+I (606) wifi_init: tcpip mbox: 32
+I (609) wifi_init: udp mbox: 6
+I (612) wifi_init: tcp mbox: 6
+I (615) wifi_init: tcp tx win: 5760
+I (618) wifi_init: tcp rx win: 5760
+I (621) wifi_init: tcp mss: 1440
+I (624) wifi_init: WiFi IRAM OP enabled
+I (628) wifi_init: WiFi RX IRAM OP enabled
+I (633) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10
+W (637) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration
+W (690) phy_init: saving new calibration data because of checksum failure, mode(2)
+I (721) wifi:mode : sta (24:0a:c4:00:01:10)
+I (723) wifi:enable tsf
+I (730) briqon: task=control core=1
+I (730) briqon: task=publisher core=0
+I (730) briqon: relay=OFF gpio=1 verification=gpio_reported reason=boot
+I (730) briqon: task=acquisition core=1
+I (731) briqon: task=supervisor core=0
+I (737) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 
+I (741) briqon: Wi-Fi attempt=1 result=ESP_OK
+I (748) briqon: sensor init=ESP_OK
+I (752) briqon: health samples=0 ready=0 heap=134880 cmdq=0 notifq=0 malformed=0 busy=0
+E (756) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+I (732) main_task: Returned from app_main()
+W (770) briqon: sample=1 invalid reason=ESP_ERR_NOT_FOUND
+E (1663) wifi:sta is connecting, return error
+I (1664) briqon: Wi-Fi attempt=2 result=ESP_ERR_WIFI_CONN
+E (1757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (1758) briqon: sample=2 invalid reason=ESP_ERR_NOT_FOUND
+E (2757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+I (2759) briqon: rule transition=4 episode=1
+W (2760) briqon: sample=3 invalid reason=ESP_ERR_NOT_FOUND
+I (3161) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (3165) wifi:state: init -> auth (0xb0)
+I (3167) wifi:state: auth -> assoc (0x0)
+I (3169) wifi:state: assoc -> run (0x10)
+I (3171) wifi:connected with Wokwi-GUEST, aid = 1, channel 6, BW20, bssid = 42:13:37:55:aa:01
+I (3179) wifi:security: Open Auth, phy: bg, rssi: 6
+I (3183) wifi:pm start, type: 1
+
+I (3186) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3194) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (3203) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3210) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+W (3265) wifi:sta is connected, disconnect before connecting to new ap
+I (3266) briqon: Wi-Fi attempt=3 result=ESP_OK
+E (3757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (3758) briqon: sample=4 invalid reason=ESP_ERR_NOT_FOUND
+I (4337) esp_netif_handlers: sta ip: 10.13.37.2, mask: 255.255.255.0, gw: 10.13.37.1
+I (4339) briqon: Wi-Fi IP ready
+I (4369) briqon: MQTT attempt started=1
+E (4757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (4758) briqon: sample=5 invalid reason=ESP_ERR_NOT_FOUND
+E (5757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (5758) briqon: sample=6 invalid reason=ESP_ERR_NOT_FOUND
+E (6757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (6758) briqon: sample=7 invalid reason=ESP_ERR_NOT_FOUND
+E (7757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (7758) briqon: sample=8 invalid reason=ESP_ERR_NOT_FOUND
+E (8757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (8758) briqon: sample=9 invalid reason=ESP_ERR_NOT_FOUND
+E (9676) esp-tls: [sock=54] select() timeout
+E (9678) transport_base: Failed to open a new connection: 32774
+E (9679) mqtt_client: Error transport connect
+W (9680) briqon: MQTT transport error (credentials omitted)
+W (9685) briqon: MQTT disconnected
+E (9757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (9758) briqon: sample=10 invalid reason=ESP_ERR_NOT_FOUND
+E (10757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (10758) briqon: sample=11 invalid reason=ESP_ERR_NOT_FOUND
+I (10770) briqon: health samples=11 ready=0 heap=134576 cmdq=0 notifq=1 malformed=0 busy=0
+E (11757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (11758) briqon: sample=12 invalid reason=ESP_ERR_NOT_FOUND
+E (12757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (12758) briqon: sample=13 invalid reason=ESP_ERR_NOT_FOUND
+E (13757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (13758) briqon: sample=14 invalid reason=ESP_ERR_NOT_FOUND
+E (14757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (14758) briqon: sample=15 invalid reason=ESP_ERR_NOT_FOUND
+E (15757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (15758) briqon: sample=16 invalid reason=ESP_ERR_NOT_FOUND
+E (16757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (16758) briqon: sample=17 invalid reason=ESP_ERR_NOT_FOUND
+E (17757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (17758) briqon: sample=18 invalid reason=ESP_ERR_NOT_FOUND
+E (18757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (18758) briqon: sample=19 invalid reason=ESP_ERR_NOT_FOUND
+E (19757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (19758) briqon: sample=20 invalid reason=ESP_ERR_NOT_FOUND
+I (19790) briqon: MQTT attempt started=1
+E (20757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (20758) briqon: sample=21 invalid reason=ESP_ERR_NOT_FOUND
+I (20791) briqon: health samples=21 ready=0 heap=133836 cmdq=0 notifq=1 malformed=0 busy=0
+E (21757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (21758) briqon: sample=22 invalid reason=ESP_ERR_NOT_FOUND
+E (22757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (22758) briqon: sample=23 invalid reason=ESP_ERR_NOT_FOUND
+E (23757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (23758) briqon: sample=24 invalid reason=ESP_ERR_NOT_FOUND
+E (24757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (24758) briqon: sample=25 invalid reason=ESP_ERR_NOT_FOUND
+E (25255) esp-tls: [sock=54] select() timeout
+E (25257) transport_base: Failed to open a new connection: 32774
+E (25258) mqtt_client: Error transport connect
+W (25259) briqon: MQTT transport error (credentials omitted)
+W (25264) briqon: MQTT disconnected
+E (25757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (25758) briqon: sample=26 invalid reason=ESP_ERR_NOT_FOUND
+E (26757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (26758) briqon: sample=27 invalid reason=ESP_ERR_NOT_FOUND
+E (27757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (27758) briqon: sample=28 invalid reason=ESP_ERR_NOT_FOUND
+E (28757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (28758) briqon: sample=29 invalid reason=ESP_ERR_NOT_FOUND
+E (29757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (29758) briqon: sample=30 invalid reason=ESP_ERR_NOT_FOUND
+E (30757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (30758) briqon: sample=31 invalid reason=ESP_ERR_NOT_FOUND
+I (30793) briqon: health samples=31 ready=0 heap=134580 cmdq=0 notifq=1 malformed=0 busy=0
+E (31757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (31758) briqon: sample=32 invalid reason=ESP_ERR_NOT_FOUND
+E (32757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (32758) briqon: sample=33 invalid reason=ESP_ERR_NOT_FOUND
+E (33757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (33758) briqon: sample=34 invalid reason=ESP_ERR_NOT_FOUND
+E (34757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (34758) briqon: sample=35 invalid reason=ESP_ERR_NOT_FOUND
+E (35757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (35758) briqon: sample=36 invalid reason=ESP_ERR_NOT_FOUND
+E (36757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (36758) briqon: sample=37 invalid reason=ESP_ERR_NOT_FOUND
+E (37757) ds18b20: ds18b20_trigger_temperature_conversion(135): reset bus error
+W (37758) briqon: sample=38 invalid reason=ESP_ERR_NOT_FOUND
+E (38757) ds18b20: ds18b20_trigger_temperature_conversion(135): 
